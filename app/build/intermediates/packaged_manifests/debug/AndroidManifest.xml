@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rafale.sci_fiallinone"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SciFiAllInOne" >
+        <activity android:name="com.rafale.sci_fiallinone.Internet_acti" />
+        <activity android:name="com.rafale.sci_fiallinone.Notes_acti" />
+        <activity android:name="com.rafale.sci_fiallinone.Stop_watch_acti" />
+        <activity android:name="com.rafale.sci_fiallinone.Alarm_acti" />
+        <activity
+            android:name="com.rafale.sci_fiallinone.Time_acti"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.rafale.sci_fiallinone.Data_acti" />
+        <activity android:name="com.rafale.sci_fiallinone.Calendar_acti" />
+        <activity android:name="com.rafale.sci_fiallinone.Temperature_acti" />
+        <activity android:name="com.rafale.sci_fiallinone.Feedback_acti" />
+        <activity android:name="com.rafale.sci_fiallinone.Fuel_cost_ac" />
+        <activity android:name="com.rafale.sci_fiallinone.Age_acti" />
+        <activity android:name="com.rafale.sci_fiallinone.Calculator_acti" />
+        <activity android:name="com.rafale.sci_fiallinone.Bmi_acti" />
+        <activity android:name="com.rafale.sci_fiallinone.Second_ac" />
+        <activity android:name="com.rafale.sci_fiallinone.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

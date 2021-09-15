@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/idmore"
+        android:icon="@drawable/more_icon"
+        android:title="@string/More_icon_title"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/iddeveloper"
+        android:icon="@drawable/rafale_studio_icon_logo"
+        android:title="@string/Developer_icon_title"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/idfeedback"
+        android:icon="@drawable/feedback_icon"
+        android:title="@string/Feedback_icon_title"
+        app:showAsAction="ifRoom" />
+
+</menu>

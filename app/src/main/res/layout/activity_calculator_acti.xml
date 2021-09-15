@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="@color/black"
+    tools:context=".Calculator_acti">
+
+
+    <LinearLayout
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:weightSum="10"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="2dp">
+
+
+        <TextView
+            android:id="@+id/tvsec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:gravity="bottom"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textAlignment="viewEnd"
+            android:textColor="#f6f6f6"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:gravity="bottom"
+            android:hint="@string/Main_calculator_ac_display_buttom_hint"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textAlignment="viewEnd"
+            android:textColor="#fff"
+            android:textColorHint="#EDEDED"
+            android:textSize="35sp" />
+
+        <LinearLayout
+            android:id="@+id/constant_row_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/b_ac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shapebutton"
+                android:text="@string/Main_calculator_ac_trigno_and_others_Button_AC"
+                android:textColor="@color/white_shine"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/b_c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:text="@string/Main_calculator_ac_trigno_and_others_Button_C"
+                android:textColor="#ffa500"
+                android:textSize="20sp">
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/b_percent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:text="@string/Main_calculator_ac_sign_Button_percentage"
+                android:textColor="#ffa500"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/b_bracket_open"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:text="@string/Main_calculator_ac_trigno_and_others_Button_bracket_open"
+                android:textColor="#ffa500"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/b_bracket_close"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:text="@string/Main_calculator_ac_trigno_and_others_Button_bracket_close"
+                android:textColor="#ffa500"
+                android:textSize="20sp">
+
+            </Button>
+
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/shapemain">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/Page_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="clip_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/One_row_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <Button
+                            android:id="@+id/sin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/shapemain"
+                            android:text="@string/Main_calculator_ac_scintific_Button_sin"
+                            android:textAllCaps="false"
+                            android:textColor="#ffa500"
+                            android:textSize="20sp">
+
+                        </Button>
+
+
+                        <Button
+                            android:id="@+id/cos"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shapemain"
+                            android:text="@string/Main_calculator_ac_scintific_Button_cos"
+                            android:textAllCaps="false"
+                            android:textColor="#ffa500"
+                            android:textSize="20sp">
+
+                        </Button>
+
+                        <Button
+                            android:id="@+id/btn_tan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shapemain"
+                            android:text="@string/Main_calculator_ac_scintific_Button_tan"
+                            android:textAllCaps="false"
+                            android:textColor="#ffa500"
+                            android:textSize="20sp">
+
+                        </Button>
+
+                        <Button
+                            android:id="@+id/log"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shapemain"
+                            android:text="@string/Main_calculator_ac_scintific_Button_log"
+                            android:textAllCaps="false"
+                            android:textColor="#ffa500"
+                            android:textSize="20sp">
+
+                        </Button>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/One_row_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <Button
+                            android:id="@+id/b_in"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/shapemain"
+                            android:text="@string/Main_calculator_ac_scintific_Button_in"
+                            android:textAllCaps="false"
+                            android:textColor="@color/teal_200"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/b_onebyx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shapemain"
+                            android:text="@string/Main_calculator_ac_scintific_Button_oneByx"
+                            android:textAllCaps="false"
+                            android:textColor="#ffa500"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/b_mode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shapemain"
+                            android:text="@string/Main_calculator_ac_scintific_Button_mode"
+                            android:textAllCaps="false"
+                            android:textColor="#ffa500"
+                            android:textSize="20sp" />
+
+
+                        <Button
+                            android:id="@+id/b_root"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shapemain"
+                            android:text="@string/Main_calculator_ac_scintific_Button_square_root"
+                            android:textAllCaps="false"
+                            android:textColor="#ffa500"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/Page_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="clip_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/Two_row_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <Button
+                            android:id="@+id/epowerx"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/shapemain"
+                            android:text="@string/Main_calculator_ac_scintific_Button_Eulers"
+                            android:textAllCaps="false"
+                            android:textColor="#ffa500"
+                            android:textSize="20sp">
+
+                        </Button>
+
+
+                        <Button
+                            android:id="@+id/square"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shapemain"
+                            android:text="@string/Main_calculator_ac_scintific_Button_square"
+                            android:textAllCaps="false"
+                            android:textColor="#ffa500"
+                            android:textSize="20sp">
+
+                        </Button>
+
+                        <Button
+                            android:id="@+id/btn_xpowery"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shapemain"
+                            android:text="@string/Main_calculator_ac_scintific_Button_xpowery"
+                            android:textAllCaps="false"
+                            android:textColor="#ffa500"
+                            android:textSize="20sp">
+
+                        </Button>
+
+                        <Button
+                            android:id="@+id/btn_pi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shapemain"
+                            android:text="@string/Main_calculator_ac_scintific_Button_square_e"
+                            android:textAllCaps="false"
+                            android:textColor="#ffa500"
+                            android:textSize="20sp">
+
+                        </Button>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Two_row_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <Button
+                            android:id="@+id/factorial"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/shapemain"
+                            android:text="@string/Main_caculator_ac_scinific_Button_factorial"
+                            android:textAllCaps="false"
+                            android:textColor="#ffa500"
+                            android:textSize="20sp">
+
+                        </Button>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/numberpad_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/row_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <Button
+                        android:id="@+id/curly_open"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_trigno_and_others_Button_curly_bracket_open"
+                        android:textColor="@color/cyan"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/curly_close"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_trigno_and_others_Button_curly_bracket_close"
+                        android:textColor="@color/cyan"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/plusminus"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_scintific_Button_square_plusMinus"
+                        android:textColor="@color/cyan"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/divide"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_sign_Button_divition"
+                        android:textColor="@color/cyan"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <Button
+                        android:id="@+id/seven"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_number_Button_seven"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/eight"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_number_Button_eight"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/nine"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_number_Button_nine"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/minus"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_sign_Button_substraction"
+                        android:textColor="@color/cyan"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <Button
+                        android:id="@+id/four"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_number_Button_four"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/five"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_number_Button_five"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/six"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_number_Button_six"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/plus"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_sign_Button_addition"
+                        android:textColor="@color/cyan"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <Button
+                        android:id="@+id/one"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_number_Button_one"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/two"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_number_Button_two"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/three"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_number_Button_three"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/multiply"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_sign_Button_multiplication"
+                        android:textColor="@color/cyan"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/row_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <Button
+                        android:id="@+id/decimal"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_sign_Button_decimal"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/zero"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_number_Button_zero"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/doublezero"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_number_Button_doublezero"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/equal"
+                        android:layout_width="66dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shapemain"
+                        android:text="@string/Main_calculator_ac_sign_Button_equal"
+                        android:textColor="@color/cyan"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

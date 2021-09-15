@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Second_ac">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Second_ac_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:fillViewport="true"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/Scroll_view_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/Area_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/calcutator_icon_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="40dp"
+                        android:contentDescription="@string/Second_ac_Image_description"
+                        android:onClick="click_calculator"
+                        android:src="@drawable/calculator_icon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/calcutator_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Second_ac_calculator_icon_text"
+                        android:textColor="@color/silver"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@+id/calcutator_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/calcutator_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/calcutator_icon_btn" />
+
+                    <ImageView
+                        android:id="@+id/bmi_icon_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="40dp"
+                        android:contentDescription="@string/Second_ac_Image_description"
+                        android:foregroundGravity="center_horizontal"
+                        android:onClick="click_bmi"
+                        android:src="@drawable/bmi_icon"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/bmi_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Second_ac_BMI_icon_text"
+                        android:textColor="@color/silver"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@+id/bmi_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/bmi_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/bmi_icon_btn" />
+
+                    <ImageView
+                        android:id="@+id/age_icon_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginRight="30dp"
+                        android:contentDescription="@string/Second_ac_Image_description"
+                        android:onClick="click_age"
+                        android:src="@drawable/cake_icon"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/age_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:shadowColor="@color/purple_500"
+                        android:text="@string/Second_ac_AGE_icon_text"
+                        android:textColor="@color/silver"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@+id/age_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/age_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/age_icon_btn" />
+
+                    <ImageView
+                        android:id="@+id/fuel_icon_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@string/Second_ac_Image_description"
+                        android:onClick="click_fuel_cost"
+                        android:src="@drawable/fuel_pump_icon"
+                        app:layout_constraintEnd_toEndOf="@+id/calcutator_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/calcutator_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/calcutator_text" />
+
+                    <TextView
+                        android:id="@+id/fuel_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Second_ac_FUEL_COST_icon_text"
+                        android:textColor="@color/silver"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@+id/fuel_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/fuel_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/fuel_icon_btn" />
+
+                    <ImageView
+                        android:id="@+id/temperature_icon_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@string/Second_ac_Image_description"
+                        android:onClick="click_temperature"
+                        android:src="@drawable/reversible_circle_icon"
+                        app:layout_constraintEnd_toEndOf="@+id/bmi_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/bmi_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/bmi_text" />
+
+                    <TextView
+                        android:id="@+id/temperature_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Second_ac_TEMPERATURE_icon_text"
+                        android:textColor="@color/silver"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@+id/temperature_icon_btn"
+                        app:layout_constraintHorizontal_bias="0.36"
+                        app:layout_constraintStart_toStartOf="@+id/temperature_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/temperature_icon_btn" />
+
+                    <ImageView
+                        android:id="@+id/currency_icon_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@string/Second_ac_Image_description"
+                        android:src="@drawable/currency_two_icon"
+                        app:layout_constraintEnd_toEndOf="@+id/age_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/age_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/age_text" />
+
+                    <TextView
+                        android:id="@+id/currency_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Second_ac_CURRENCY_icon_text"
+                        android:textColor="@color/silver"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@+id/currency_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/currency_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/currency_icon_btn" />
+
+                    <ImageView
+                        android:id="@+id/calendar_icon_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@string/Second_ac_Image_description"
+                        android:onClick="click_calendar"
+                        android:src="@drawable/calendar_icon"
+                        app:layout_constraintEnd_toEndOf="@+id/fuel_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/fuel_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/fuel_text" />
+
+                    <TextView
+                        android:id="@+id/calendar_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Second_ac_CALENDAR_icon_text"
+                        android:textColor="@color/silver"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@+id/calendar_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/calendar_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/calendar_icon_btn" />
+
+                    <ImageView
+                        android:id="@+id/data_icon_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@string/Second_ac_Image_description"
+                        android:onClick="click_data"
+                        android:src="@drawable/wifi_icon"
+                        app:layout_constraintEnd_toEndOf="@+id/temperature_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/temperature_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/temperature_text" />
+
+                    <TextView
+                        android:id="@+id/data_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Second_ac_DATA_icon_text"
+                        android:textColor="@color/silver"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@+id/data_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/data_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/data_icon_btn" />
+
+                    <ImageView
+                        android:id="@+id/time_icon_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@string/Second_ac_Image_description"
+                        android:onClick="click_time"
+                        android:src="@drawable/clock_icon"
+                        app:layout_constraintEnd_toEndOf="@+id/currency_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/currency_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/currency_text" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Second_ac_TIME_icon_text"
+                        android:textColor="@color/silver"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@+id/time_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/time_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/time_icon_btn" />
+
+                    <ImageView
+                        android:id="@+id/weather_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@string/Second_ac_Image_description"
+                        android:src="@drawable/cloud_icon"
+                        app:layout_constraintEnd_toEndOf="@+id/calendar_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/calendar_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/calendar_text" />
+
+                    <TextView
+                        android:id="@+id/weather_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Second_ac_WEATHER_icon_text"
+                        android:textColor="@color/silver"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@+id/weather_icon"
+                        app:layout_constraintStart_toStartOf="@+id/weather_icon"
+                        app:layout_constraintTop_toBottomOf="@+id/weather_icon" />
+
+                    <ImageView
+                        android:id="@+id/alarm_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@string/Second_ac_Image_description"
+                        android:onClick="click_alarm"
+                        android:src="@drawable/alarm_clock_icon"
+                        app:layout_constraintEnd_toEndOf="@+id/data_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/data_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/data_text" />
+
+                    <TextView
+                        android:id="@+id/alarm_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Second_ac_ALARM_icon_text"
+                        android:textColor="@color/silver"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@+id/alarm_icon"
+                        app:layout_constraintStart_toStartOf="@+id/alarm_icon"
+                        app:layout_constraintTop_toBottomOf="@+id/alarm_icon" />
+
+                    <ImageView
+                        android:id="@+id/stop_watch_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@string/Second_ac_Image_description"
+                        android:onClick="click_stop_watch"
+                        android:src="@drawable/stop_watch_icon"
+                        app:layout_constraintEnd_toEndOf="@+id/time_icon_btn"
+                        app:layout_constraintStart_toStartOf="@+id/time_icon_btn"
+                        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                    <TextView
+                        android:id="@+id/stop_watch_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Second_ac_STOP_WATCH_icon_text"
+                        android:textColor="@color/silver"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@+id/stop_watch_icon"
+                        app:layout_constraintHorizontal_bias="0.428"
+                        app:layout_constraintStart_toStartOf="@+id/stop_watch_icon"
+                        app:layout_constraintTop_toBottomOf="@+id/stop_watch_icon" />
+
+
+                    <ImageView
+                        android:id="@+id/note_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@string/Notes_ac_img_or_icon_descriptions"
+                        android:onClick="click_notes"
+                        android:src="@drawable/note_icon"
+                        app:layout_constraintEnd_toEndOf="@+id/weather_icon"
+                        app:layout_constraintStart_toStartOf="@+id/weather_icon"
+                        app:layout_constraintTop_toBottomOf="@+id/weather_text" />
+
+                    <TextView
+                        android:id="@+id/note_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Notes_ac_heading_one"
+                        android:textColor="@color/silver"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@+id/note_icon"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/note_icon"
+                        app:layout_constraintTop_toBottomOf="@+id/note_icon" />
+
+                    <ImageView
+                        android:id="@+id/internet_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@string/Internet_ac_img_or_icon_descriptions"
+                        android:onClick="click_internet"
+                        android:src="@drawable/internet_icon"
+                        app:layout_constraintEnd_toEndOf="@+id/alarm_icon"
+                        app:layout_constraintStart_toStartOf="@+id/alarm_icon"
+                        app:layout_constraintTop_toBottomOf="@+id/alarm_text" />
+
+                    <TextView
+                        android:id="@+id/internet_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Internet_ac_heading_one"
+                        android:textColor="@color/silver"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@+id/internet_icon"
+                        app:layout_constraintStart_toStartOf="@+id/internet_icon"
+                        app:layout_constraintTop_toBottomOf="@+id/internet_icon" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Fuel_cost_ac">
+
+    <ImageView
+        android:id="@+id/Back_button_fuel_cost_ac"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/Fuel_cost_ac_back_button_description"
+        android:onClick="click_backBtn_FuelCostAc"
+        android:src="@drawable/left_arrow_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Heading_fuelcost_ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Fuel_cost_ac_heading_one"
+        android:textColor="@color/white_shine"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Reser_button_fuelCost_ac"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/Fuel_cost_ac_reset_button_description"
+        android:src="@drawable/refresh_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Distance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/Fuel_cost_ac_text_one"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Heading_fuelcost_ac" />
+
+    <EditText
+        android:id="@+id/input_distance"
+        android:layout_width="90sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_vertical|end"
+        android:hint="@string/Fuel_cost_ac_hint_one"
+        android:inputType="numberDecimal"
+        android:textColor="#F57F17"
+        android:textColorHint="#F57F17"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Distance_text"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Distance_text_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Fuel_cost_ac_text_one_small"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/input_distance"
+        app:layout_constraintStart_toStartOf="@+id/input_distance"
+        app:layout_constraintTop_toBottomOf="@+id/input_distance" />
+
+    <TextView
+        android:id="@+id/Efficiency_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/Fuel_cost_ac_text_two"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Distance_text"
+        app:layout_constraintStart_toStartOf="@+id/Distance_text"
+        app:layout_constraintTop_toBottomOf="@+id/Distance_text" />
+
+    <EditText
+        android:id="@+id/input_efficiency"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_vertical|end"
+        android:hint="@string/Fuel_cost_ac_hint_two"
+        android:inputType="numberDecimal"
+        android:textColor="#F57F17"
+        android:textColorHint="#F57F17"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Efficiency_text"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Efficiency_text_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Fuel_cost_ac_text_two_small"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/input_efficiency"
+        app:layout_constraintTop_toBottomOf="@+id/input_efficiency" />
+
+    <TextView
+        android:id="@+id/Price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/Fuel_cost_ac_text_three"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Efficiency_text"
+        app:layout_constraintStart_toStartOf="@+id/Efficiency_text"
+        app:layout_constraintTop_toBottomOf="@+id/Efficiency_text" />
+
+    <EditText
+        android:id="@+id/input_price"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_vertical|end"
+        android:hint="@string/Fuel_cost_ac_hint_three"
+        android:inputType="numberDecimal"
+        android:textColor="#F57F17"
+        android:textColorHint="#F57F17"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Price_text"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Price_text_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Fuel_cost_ac_text_three_small"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/input_price"
+        app:layout_constraintStart_toStartOf="@+id/input_price"
+        app:layout_constraintTop_toBottomOf="@+id/input_price" />
+
+    <TextView
+        android:id="@+id/Person_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/Fuel_cost_ac_text_four"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Price_text"
+        app:layout_constraintStart_toStartOf="@+id/Price_text"
+        app:layout_constraintTop_toBottomOf="@+id/Price_text" />
+
+    <EditText
+        android:id="@+id/input_persons"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_vertical|end"
+        android:hint="@string/Fuel_cost_ac_hint_four"
+        android:inputType="number"
+        android:textColor="#F57F17"
+        android:textColorHint="#F57F17"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Person_text"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Persons_text_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Fuel_cost_ac_text_four_small"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/input_persons"
+        app:layout_constraintStart_toStartOf="@+id/input_persons"
+        app:layout_constraintTop_toBottomOf="@+id/input_persons" />
+
+    <Button
+        android:id="@+id/Go_btn_fuelCost_ac"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/shape_go_btn"
+        android:text="@string/Fuel_cost_ac_Go_button"
+        android:textColor="#F57F17"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/result_two_fuelCost_ac"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/result_one_fuelCost_ac"
+        android:layout_width="165dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/Person_text"
+        app:layout_constraintStart_toStartOf="@+id/Person_text"
+        app:layout_constraintTop_toBottomOf="@+id/Person_text" />
+
+    <TextView
+        android:id="@+id/result_two_fuelCost_ac"
+        android:layout_width="190dp"
+        android:layout_height="35dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/result_one_fuelCost_ac"
+        app:layout_constraintTop_toBottomOf="@+id/result_one_fuelCost_ac" />
+
+    <TextView
+        android:id="@+id/result_three_fuelCost_ac"
+        android:layout_width="190dp"
+        android:layout_height="35dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/result_two_fuelCost_ac"
+        app:layout_constraintTop_toBottomOf="@+id/result_two_fuelCost_ac" />
+
+
+</android.support.constraint.ConstraintLayout>

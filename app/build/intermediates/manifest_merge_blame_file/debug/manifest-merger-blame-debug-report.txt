@@ -1,0 +1,132 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.rafale.sci_fiallinone"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.VIBRATE" />
+11-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:5:4-65
+11-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:5:21-62
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:6:5-65
+12-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:6:22-62
+13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+13-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:7:5-71
+13-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:7:22-68
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:8:5-67
+14-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:8:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:9:5-79
+15-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.SEND_SMS" />
+16-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:10:5-67
+16-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:10:22-64
+17    <uses-permission android:name="android.permission.READ_SMS" />
+17-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:11:5-67
+17-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:11:22-64
+18    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+18-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:12:5-70
+18-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:12:22-67
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:9:5-79
+19-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:9:22-76
+20    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+20-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:14:5-76
+20-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:14:22-73
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:15:5-68
+21-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:15:22-65
+22
+23    <application
+23-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:17:5-52:19
+24        android:allowBackup="true"
+24-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:18:9-35
+25        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+25-->[com.android.support:support-compat:28.0.0] C:\Users\kuldeep\.gradle\caches\transforms-2\files-2.1\2a6c121eda6c2cbe33230f54b72bbbd4\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+26        android:debuggable="true"
+27        android:icon="@mipmap/ic_launcher"
+27-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:19:9-43
+28        android:label="@string/app_name"
+28-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:20:9-41
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:21:9-54
+30        android:supportsRtl="true"
+30-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:22:9-35
+31        android:theme="@style/Theme.SciFiAllInOne" >
+31-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:23:9-51
+32        <activity android:name="com.rafale.sci_fiallinone.Internet_acti" />
+32-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:25:9-51
+32-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:25:19-48
+33        <activity android:name="com.rafale.sci_fiallinone.Notes_acti" />
+33-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:26:9-48
+33-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:26:19-45
+34        <activity android:name="com.rafale.sci_fiallinone.Stop_watch_acti" />
+34-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:27:9-53
+34-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:27:19-50
+35        <activity android:name="com.rafale.sci_fiallinone.Alarm_acti" />
+35-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:28:9-48
+35-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:28:19-45
+36        <activity
+36-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:29:9-31:53
+37            android:name="com.rafale.sci_fiallinone.Time_acti"
+37-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:30:13-38
+38            android:screenOrientation="landscape" />
+38-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:31:13-50
+39        <activity android:name="com.rafale.sci_fiallinone.Data_acti" />
+39-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:32:9-47
+39-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:32:19-44
+40        <activity android:name="com.rafale.sci_fiallinone.Calendar_acti" />
+40-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:33:9-51
+40-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:33:19-48
+41        <activity android:name="com.rafale.sci_fiallinone.Temperature_acti" />
+41-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:34:9-54
+41-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:34:19-51
+42        <activity android:name="com.rafale.sci_fiallinone.Feedback_acti" />
+42-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:35:9-51
+42-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:35:19-48
+43        <activity android:name="com.rafale.sci_fiallinone.Fuel_cost_ac" />
+43-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:36:9-50
+43-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:36:19-47
+44        <activity android:name="com.rafale.sci_fiallinone.Age_acti" />
+44-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:37:9-46
+44-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:37:19-43
+45        <activity android:name="com.rafale.sci_fiallinone.Calculator_acti" />
+45-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:38:9-53
+45-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:38:19-50
+46        <activity android:name="com.rafale.sci_fiallinone.Bmi_acti" />
+46-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:39:9-46
+46-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:39:19-43
+47        <activity android:name="com.rafale.sci_fiallinone.Second_ac" />
+47-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:40:9-47
+47-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:40:19-44
+48        <activity android:name="com.rafale.sci_fiallinone.MainActivity" >
+48-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:41:9-47:20
+48-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:41:19-47
+49            <intent-filter>
+49-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:42:13-46:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:43:17-69
+50-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:43:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:45:17-77
+52-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:45:27-74
+53            </intent-filter>
+54        </activity>
+55
+56        <meta-data
+56-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:49:9-51:57
+57            android:name="preloaded_fonts"
+57-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:50:13-43
+58            android:resource="@array/preloaded_fonts" />
+58-->C:\Users\kuldeep\Desktop\@Rafale_Studio_2k-20\App_Studio\@Rafale_Studio_Apps\UNDER CONSTRUCTION Projects\SciFi All in One  v.1.0.1\app\src\main\AndroidManifest.xml:51:13-54
+59    </application>
+60
+61</manifest>

@@ -1,0 +1,296 @@
+<resources>
+    <string name="app_name">Sci-Fi Multitasking</string>
+    //----------------------------------------------------------------------------------------------
+
+    // MENU FILE
+    //for top menu
+    <string name="More_icon_title">More Icon</string>
+    <string name="Developer_icon_title">Developer Icon</string>
+    <string name="Feedback_icon_title">Feedback Icon</string>
+    //----------------------------------------------------------------------------------------------
+
+    //FEEDBACK ACTIVITY
+    //for this page
+    <string name="Feedback_ac_back_btn_description">Back Button of Feedback Activity</string>
+    <string name="Feedback_ac_reset_btn_description">Reset Button of Feedback Activity</string>
+    <string name="Feedback_ac_App_logo_img_decription">App Logo of Feedback Activity</string>
+    <string name="Feedback_ac_hint_one">User Name</string>
+    <string name="Feedback_ac_hint_two">Password</string>
+    <string name="Feedback_ac_login_btn_text">Login</string>
+    <string name="Feedback_ac_notice_text">Do not have an account?</string>
+    <string name="Feedback_ac_notice_btn_text">Sign up</string>
+    //----------------------------------------------------------------------------------------------
+
+    //SIGN UP ACTIVITY
+    //for this page
+    <string name="SignUp_ac_All_Image_and_Icons_Description">All Images and Icon of Login Activity</string>
+
+    <string name="SignUp_ac_text_one">Sign</string>
+    <string name="SignUp_ac_text_one_one">Up</string>
+    <string name="SignUp_ac_hint_text_one">Full name</string>
+    <string name="SignUp_ac_hint_text_two">Email address</string>
+    <string name="SignUp_ac_hint_text_three">Phone number</string>
+    <string name="SignUp_ac_hint_text_four">Create password</string>
+    <string name="SignUp_ac_hint_text_five">Confirm password</string>
+    <string name="SignUp_ac_button_text_one">Sign-Up</string>
+    <string name="SignUp_ac_button_text_two">Already have an account? Sign In</string>
+    <string name="SignUp_ac_Ads_text_one">Advertise*</string>
+    //----------------------------------------------------------------------------------------------
+
+    //HOME ACTIVITY
+    //for this Page
+    <string name="Home_ac_image_one_description">Indian Flag</string>
+    <string name="Home_ac_image_two_description">Calculator Image or Logo</string>
+    <string name="Home_ac_image_three_description">Golder Lion Image</string>
+    //----------------------------------------------------------------------------------------------
+
+    //SECOND ACTIVITY
+    //for this page
+    <string name="Second_ac_Image_description">All Image Of Second Activity</string>
+
+    <string name="Second_ac_calculator_icon_text">Calculator</string>
+    <string name="Second_ac_BMI_icon_text">BMI</string>
+    <string name="Second_ac_AGE_icon_text">Age</string>
+    <string name="Second_ac_FUEL_COST_icon_text">Fuel Cost</string>
+    <string name="Second_ac_TEMPERATURE_icon_text">Temperature</string>
+    <string name="Second_ac_CURRENCY_icon_text">Currency</string>
+    <string name="Second_ac_CALENDAR_icon_text">Calendar</string>
+    <string name="Second_ac_DATA_icon_text">Data</string>
+    <string name="Second_ac_TIME_icon_text">Time</string>
+    <string name="Second_ac_WEATHER_icon_text">Weather</string>
+    <string name="Second_ac_ALARM_icon_text">Alarm</string>
+    <string name="Second_ac_STOP_WATCH_icon_text">Stop Watch</string>
+    //----------------------------------------------------------------------------------------------
+
+    //CALCULATOR ACTIVITY
+    //for this page
+    // For display texts
+    <string name="Main_calculator_ac_display_buttom_hint">0</string>
+
+    // For numbers buttons
+    <string name="Main_calculator_ac_number_Button_zero">0</string>
+    <string name="Main_calculator_ac_number_Button_doublezero">00</string>
+    <string name="Main_calculator_ac_number_Button_one">1</string>
+    <string name="Main_calculator_ac_number_Button_two">2</string>
+    <string name="Main_calculator_ac_number_Button_three">3</string>
+    <string name="Main_calculator_ac_number_Button_four">4</string>
+    <string name="Main_calculator_ac_number_Button_five">5</string>
+    <string name="Main_calculator_ac_number_Button_six">6</string>
+    <string name="Main_calculator_ac_number_Button_seven">7</string>
+    <string name="Main_calculator_ac_number_Button_eight">8</string>
+    <string name="Main_calculator_ac_number_Button_nine">9</string>
+
+    // For sign buttons
+    <string name="Main_calculator_ac_sign_Button_decimal">.</string>
+    <string name="Main_calculator_ac_sign_Button_addition">+</string>
+    <string name="Main_calculator_ac_sign_Button_substraction">-</string>
+    <string name="Main_calculator_ac_sign_Button_multiplication">×</string>
+    <string name="Main_calculator_ac_sign_Button_divition">÷</string>
+    <string name="Main_calculator_ac_sign_Button_percentage">%</string>
+    <string name="Main_calculator_ac_sign_Button_equal">=</string>
+    <string name="Main_calculator_ac_scintific_Button_square_plusMinus">±</string>
+
+    // For scintific calculation
+    <string name="Main_calculator_ac_scintific_Button_square_e">π</string>
+    <string name="Main_caculator_ac_scinific_Button_factorial">x!</string>
+    <string name="Main_calculator_ac_scintific_Button_square_root">√</string>
+    <string name="Main_calculator_ac_scintific_Button_sin">sin</string>
+    <string name="Main_calculator_ac_scintific_Button_cos">cos</string>
+    <string name="Main_calculator_ac_scintific_Button_tan">tan</string>
+    <string name="Main_calculator_ac_scintific_Button_in">In</string>
+    <string name="Main_calculator_ac_scintific_Button_log">log</string>
+    <string name="Main_calculator_ac_scintific_Button_oneByx">1/x</string>
+    <string name="Main_calculator_ac_scintific_Button_Eulers">e^x</string>
+    <string name="Main_calculator_ac_scintific_Button_square">X²</string>
+    <string name="Main_calculator_ac_scintific_Button_xpowery">X^y</string>
+    <string name="Main_calculator_ac_scintific_Button_mode">|x|</string>
+    <string name="Main_calculator_ac_scintific_Button_pi">π</string>
+    <string name="Main_calculator_ac_scintific_Button_factorial">x!</string>
+
+    // For Other
+    <string name="Main_calculator_ac_trigno_and_others_Button_bracket_close">)</string>
+    <string name="Main_calculator_ac_trigno_and_others_Button_bracket_open">(</string>
+    <string name="Main_calculator_ac_trigno_and_others_Button_curly_bracket_open">{</string>
+    <string name="Main_calculator_ac_trigno_and_others_Button_curly_bracket_close">}</string>
+    <string name="Main_calculator_ac_trigno_and_others_Button_AC">AC</string>
+    <string name="Main_calculator_ac_trigno_and_others_Button_C">C</string>
+    //----------------------------------------------------------------------------------------------
+
+    //BMI ACTIVITY
+    //for this page
+    <string name="Bmi_ac_back_button_description">Back Button Of BMI Activity</string>
+    <string name="Bmi_ac_reset_button_description">Reset Button Of BMI Activity</string>
+    <string name="Bmi_ac_heading_one">BMI</string>
+
+    <string name="Bmi_ac_text_one">Weight</string>
+    <string name="Bmi_ac_text_one_small">Kilograms</string>
+    <string name="Bmi_ac_hint_one">0</string>
+
+    <string name="Bmi_ac_text_two">Height</string>
+    <string name="Bmi_ac_text_two_small">Centimeters</string>
+    <string name="Bmi_ac_hint_two">0</string>
+
+    <string name="Bmi_ac_Go_button">GO</string>
+    //----------------------------------------------------------------------------------------------
+
+    //AGE ACTIVITY
+    //for this page
+    <string name="Age_Calculator_ac_description">All Buttons, Images and Logos Of BMI Activity</string>
+    <string name="Age_Calculator_ac_heading_one">Age</string>
+
+    <string name="Age_calculator_ac_text_one">Start</string>
+    <string name="Age_calculator_ac_text_two">End</string>
+
+    <string name="Age_calculator_ac_hint_type_text_one">YEARS</string>
+    <string name="Age_calculator_ac_hint_type_texttwo">MONTHS</string>
+    <string name="Age_calculator_ac_hint_type_textthree">DAYS</string>
+    <string name="Age_calculator_ac_hint">Years| Months| Days</string>
+    <string name="Age_calculator_ac_calculate_button_text">GO</string>
+    <string name="Age_calculator_ac_text_btBirth">09/01/2001</string>
+    <string name="Age_calculator_ac_hint_btToday"> </string>
+    //----------------------------------------------------------------------------------------------
+
+    //FUEL COST ACTIVITY
+    //for this page
+    <string name="Fuel_cost_ac_back_button_description">Back Button Of Fuel Cost Activity</string>
+    <string name="Fuel_cost_ac_reset_button_description">Reset Button Of Fuel Cost Activity</string>
+    <string name="Fuel_cost_ac_heading_one">Fuel Cost</string>
+
+    <string name="Fuel_cost_ac_text_one">Distance</string>
+    <string name="Fuel_cost_ac_text_one_small">Kilometers</string>
+    <string name="Fuel_cost_ac_hint_one">0</string>
+
+    <string name="Fuel_cost_ac_text_two">Efficiency</string>
+    <string name="Fuel_cost_ac_text_two_small">Kilometers/litter</string>
+    <string name="Fuel_cost_ac_hint_two">0</string>
+
+    <string name="Fuel_cost_ac_text_three">Price</string>
+    <string name="Fuel_cost_ac_text_three_small">₹/litter</string>
+    <string name="Fuel_cost_ac_hint_three">0</string>
+
+    <string name="Fuel_cost_ac_text_four">Persons</string>
+    <string name="Fuel_cost_ac_text_four_small">Numbers</string>
+    <string name="Fuel_cost_ac_hint_four">0</string>
+
+    <string name="Fuel_cost_ac_Go_button">GO</string>
+    //----------------------------------------------------------------------------------------------
+
+    //TEMPERATURE ACTIVITY
+    //for this page
+    <string name="Temperature_ac_img_or_icon_descriptions">Images and Icons of Temperature Activity</string>
+
+    <string name="Temperature_ac_heading_one">Temperature</string>
+
+    <string name="Temperature_ac_text_one">Temperature in</string>
+    <string name="Temperature_ac_text_two">(°C↓, °F↓, °K↓)</string>
+    <string name="Temperature_ac_hint_one">0</string>
+
+    <string name="Temperature_ac_Button_one">°C→°F</string>
+    <string name="Temperature_ac_Button_two">°C→°K</string>
+
+    <string name="Temperature_ac_Button_three">°F→°C</string>
+    <string name="Temperature_ac_Button_four">°F→°K</string>
+
+    <string name="Temperature_ac_Button_five">°K→°C</string>
+    <string name="Temperature_ac_Button_six">°K→°F</string>
+    //----------------------------------------------------------------------------------------------
+
+    //CURRENCY ACTIVITY
+    //for this page
+    //----------------------------------------------------------------------------------------------
+
+    //CALENDAR ACTIVITY
+    //for this page
+    <string name="Calendar_ac_img_or_icon_descriptions">Images and Icons of Calendar Activity</string>
+    <string name="Calendar_ac_heading_one">Calendar</string>
+
+    <string name="Calendar_ac_heading_two">Add Events :</string>
+    <string name="Calendar_ac_hint_one">Title...</string>
+    <string name="Calendar_ac_hint_two">Location...</string>
+    <string name="Calendar_ac_hint_three">Description...</string>
+    <string name="Calendar_ac_Go_btn_text">GO</string>
+    //----------------------------------------------------------------------------------------------
+
+    //DATA ACTIVITY
+    //for this page
+    <string name="Data_ac_img_or_icon_descriptions">Images and Icons of Data Activity</string>
+
+    <string name="Data_ac_heading_one">Data</string>
+
+    <string name="Data_ac_text_one">Value</string>
+    <string name="Data_ac_hint_one">0</string>
+    <string name="Data_ac_text_two">(Bit | Byte| KB | MB | GB | TB)</string>
+
+    <string name="Data_ac_text_three">From</string>
+    <string name="Data_ac_text_four">To</string>
+
+    <string name="Data_ac_Go_button_text">GO</string>
+
+    <string-array name="Type">
+        <item>Bits (bit)</item>
+        <item>"Bytes (B)"</item>
+        <item>Kilobytes (KB)</item>
+        <item>Megabytes (MB)</item>
+        <item>Gigabytes (GB)</item>
+        <item>Terabytes (TB)</item>
+    </string-array>
+    //----------------------------------------------------------------------------------------------
+
+    //TIME ACTIVITY
+    //for this page
+    <string name="Time_ac_img_or_icon_descriptions">Images and Icons of Time Activity</string>
+
+    <string name="Time_ac_heading_one">Time</string>
+
+    <string name="Time_ac_text_one">00:00:00</string>
+    //----------------------------------------------------------------------------------------------
+
+    //WEATHER ACTIVITY
+    //for this page
+    //----------------------------------------------------------------------------------------------
+
+    //ALARM ACTIVITY
+    //for this page
+    <string name="Alarm_ac_img_or_icon_descriptions">Images and Icons of Alarm Activity</string>
+
+    <string name="Alarm_ac_heading_one">Alarm</string>
+    //----------------------------------------------------------------------------------------------
+
+    //STOP WATCH ACTIVITY
+    //for this page
+    <string name="Stop_watch_ac_img_or_icon_descriptions">Images and Icons of Stop Watch Activity</string>
+
+    <string name="Stop_watch_ac_heading_one">Stop Watch</string>
+
+    <string name="Stop_watch_ac_restart_btn_text">Restart</string>
+    <string name="Stop_watch_ac_start_btn_text">Start</string>
+    <string name="Stop_watch_ac_pause_btn_text">Pause</string>
+    //----------------------------------------------------------------------------------------------
+
+    //NOTES ACTIVITY
+    //for this page
+    <string name="Notes_ac_img_or_icon_descriptions">Images and Icons of Notes Activity</string>
+
+    <string name="Notes_ac_heading_one">Notes</string>
+    //----------------------------------------------------------------------------------------------
+
+    //INTERNET ACTIVITY
+    //for this page
+    <string name="Internet_ac_img_or_icon_descriptions">Images and Icons of Internet Activity</string>
+
+    <string name="Internet_ac_heading_one">Internet</string>
+    <string name="Internet_ac_text_one">S</string>
+    <string name="Internet_ac_text_two">c</string>
+    <string name="Internet_ac_text_three">i</string>
+    <string name="Internet_ac_text_four">-</string>
+    <string name="Internet_ac_text_five">Fi</string>
+
+    <string name="Internet_ac_hint_one">Search...</string>
+    //----------------------------------------------------------------------------------------------
+
+    //ACTIVITY
+    //for this page
+    //----------------------------------------------------------------------------------------------
+
+
+</resources>

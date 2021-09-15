@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="@color/black"
+    tools:context=".Age_acti">
+
+    <ImageView
+        android:id="@+id/back_btn_age_acti"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/Age_Calculator_ac_description"
+        android:onClick="click_back_btn_age_activity"
+        android:src="@drawable/left_arrow_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Heading_age_ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Age_Calculator_ac_heading_one"
+        android:textColor="@color/white_shine"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Reset_btn_age_acti"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/Age_Calculator_ac_description"
+        android:src="@drawable/refresh_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/first_ui_heading_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/Age_calculator_ac_text_one"
+        android:textColor="@color/white_shine"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@color/black"
+        android:contentDescription="@string/Age_Calculator_ac_description"
+        android:drawableEnd="@drawable/drop_down_icon"
+        android:drawableRight="@drawable/drop_down_icon"
+        android:text="@string/Age_calculator_ac_text_btBirth"
+        android:textColor="@color/orange"
+        android:textColorHighlight="@color/silver"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/first_ui_heading_one"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/first_ui_heading_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/Age_calculator_ac_text_two"
+        android:textColor="@color/white_shine"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/first_ui_heading_one"
+        app:layout_constraintStart_toStartOf="@+id/first_ui_heading_one"
+        app:layout_constraintTop_toBottomOf="@+id/first_ui_heading_one" />
+
+    <Button
+        android:id="@+id/bt_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@color/black"
+        android:drawableEnd="@drawable/drop_down_icon"
+        android:hint="@string/Age_calculator_ac_hint_btToday"
+        android:textColor="@color/orange"
+        android:textColorHint="@color/silver"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/first_ui_heading_two"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/bt_calculate"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_go_btn"
+        android:text="@string/Age_calculator_ac_calculate_button_text"
+        android:textColor="@color/orange"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_today" />
+
+    <TextView
+        android:id="@+id/tv_screen"
+        android:layout_width="211dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="80dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white_shine"
+        android:textColorHint="#EDEDED"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_ui_heading_two" />
+
+    <TextView
+        android:id="@+id/tv_screen_two"
+        android:layout_width="211dp"
+        android:layout_height="44dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/white_shine"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_screen"
+        app:layout_constraintStart_toStartOf="@+id/tv_screen"
+        app:layout_constraintTop_toBottomOf="@+id/tv_screen" />
+
+
+</android.support.constraint.ConstraintLayout>

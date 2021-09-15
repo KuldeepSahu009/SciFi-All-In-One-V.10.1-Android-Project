@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Data_acti">
+
+    <ImageView
+        android:id="@+id/Back_bnt_data_ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/Data_ac_img_or_icon_descriptions"
+        android:onClick="click_backBtn_data_ac"
+        android:src="@drawable/left_arrow_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Heading_data_ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/Data_ac_heading_one"
+        android:textColor="@color/white_shine"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Reset_btn_data_ac"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/Data_ac_img_or_icon_descriptions"
+        android:src="@drawable/refresh_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Text_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Data_ac_text_one"
+        android:textColor="@color/white_shine"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_two" />
+
+    <TextView
+        android:id="@+id/Text_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:text="@string/Data_ac_text_two"
+        android:textColor="@color/silver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Heading_data_ac" />
+
+    <EditText
+        android:id="@+id/input_data"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_vertical|end"
+        android:hint="@string/Data_ac_hint_one"
+        android:inputType="numberDecimal"
+        android:textColor="#F57F17"
+        android:textColorHint="#F57F17"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Text_one"
+        app:layout_constraintEnd_toEndOf="@+id/Text_two"
+        app:layout_constraintStart_toStartOf="@+id/Text_two" />
+
+    <TextView
+        android:id="@+id/Text_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/Data_ac_text_three"
+        android:textColor="@color/white_shine"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Text_one"
+        app:layout_constraintStart_toStartOf="@+id/Text_one"
+        app:layout_constraintTop_toBottomOf="@+id/Text_one" />
+
+    <Spinner
+        android:id="@+id/Spinner_one"
+        android:layout_width="110dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@color/smoke_white"
+        android:entries="@array/Type"
+        android:spinnerMode="dialog"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Text_three"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Text_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/Data_ac_text_four"
+        android:textColor="@color/white_shine"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Text_three"
+        app:layout_constraintStart_toStartOf="@+id/Text_three"
+        app:layout_constraintTop_toBottomOf="@+id/Text_three" />
+
+    <Spinner
+        android:id="@+id/Spinner_two"
+        android:layout_width="110dp"
+        android:layout_height="41dp"
+        android:background="@color/smoke_white"
+        android:entries="@array/Type"
+        android:spinnerMode="dialog"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Text_four"
+        app:layout_constraintEnd_toEndOf="@+id/Spinner_one"
+        app:layout_constraintStart_toStartOf="@+id/Spinner_one" />
+
+    <Button
+        android:id="@+id/Go_btn_data_ac"
+        android:layout_width="97dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_data_ac"
+        android:text="@string/Data_ac_Go_button_text"
+        android:textColor="#F57F17"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Spinner_two"
+        app:layout_constraintStart_toStartOf="@+id/Spinner_two"
+        app:layout_constraintTop_toBottomOf="@+id/Spinner_two" />
+
+    <TextView
+        android:id="@+id/result_one_data_ac"
+        android:layout_width="123dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/white_shine"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Text_four"
+        app:layout_constraintStart_toStartOf="@+id/Text_four"
+        app:layout_constraintTop_toBottomOf="@+id/Text_four" />
+
+</android.support.constraint.ConstraintLayout>

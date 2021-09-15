@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center|center_horizontal|center_vertical"
+    android:background="@color/black"
+    tools:context=".Internet_acti">
+
+    <ImageView
+        android:id="@+id/Back_btn_internet_ac"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/Internet_ac_img_or_icon_descriptions"
+        android:onClick="click_backBtnInternetAc"
+        android:src="@drawable/left_arrow_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Heading_internet_ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Internet_ac_heading_one"
+        android:textColor="@color/white_shine"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/black"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Heading_internet_ac">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/SciFi_text_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:background="@color/black"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/Internet_ac_text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Internet_ac_text_one"
+                    android:textColor="@color/purple_700"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/Internet_ac_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Internet_ac_text_two"
+                    android:textColor="#F57F17"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/Internet_ac_text_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Internet_ac_text_three"
+                    android:textColor="#33691E"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/Internet_ac_text_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/Internet_ac_text_four"
+                    android:textColor="@color/cyan"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/Internet_ac_text_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/Internet_ac_text_five"
+                    android:textColor="#B71C1C"
+                    android:textSize="36sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/search_bar_internet_ac"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_go_btn"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_two_w">
+
+                <EditText
+                    android:id="@+id/search_text_bar_internet_ac"
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:autofillHints=""
+                    android:hint="@string/Internet_ac_hint_one"
+                    android:inputType="text"
+                    android:textColor="@color/white_shine"
+                    android:textColorHighlight="@color/silver"
+                    android:textColorHint="#606060"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/search_icon_internet_ac"
+                    android:layout_width="40dp"
+                    android:layout_height="41dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/search_icon" />
+
+                <Button
+                    android:id="@+id/mic_icon_internet_ac"
+                    android:layout_width="40dp"
+                    android:layout_height="41dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/mic_icon" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>
